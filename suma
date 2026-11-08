@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUMA | TKJ Technology</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #090817;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 9%;
+    background: rgba(9,8,23,.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    border-bottom: 1px solid #282044;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 900;
+    color: #a78bfa;
+    letter-spacing: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ddd;
+    margin-left: 25px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #a78bfa;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 130px 9% 70px;
+    background:
+    linear-gradient(90deg,#090817 15%,#090817aa),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600")
+    center/cover;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.tag {
+    color: #a78bfa;
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(42px,7vw,75px);
+    line-height: 1.1;
+    margin: 25px 0;
+}
+
+.hero h1 span {
+    color: #a78bfa;
+}
+
+.hero p {
+    color: #b9b6cc;
+    line-height: 1.9;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 32px;
+    background: #7951e8;
+    border-radius: 5px;
+    color: white;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #a78bfa;
+    transform: translateY(-5px);
+}
+
+section {
+    padding: 100px 9%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.heading h2 {
+    font-size: 38px;
+    color: #a78bfa;
+    margin-bottom: 15px;
+}
+
+.heading p {
+    color: #aaa5be;
+}
+
+.about {
+    background: #110e22;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    color: #c4c0d3;
+    line-height: 2;
+    font-size: 17px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.service {
+    background: linear-gradient(145deg,#1d1737,#100e21);
+    border: 1px solid #35265b;
+    border-radius: 15px;
+    padding: 35px 25px;
+    transition: .4s;
+}
+
+.service:hover {
+    transform: translateY(-12px);
+    border-color: #a78bfa;
+    box-shadow: 0 10px 35px #7951e833;
+}
+
+.service .icon {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.service h3 {
+    color: #a78bfa;
+    margin-bottom: 15px;
+}
+
+.service p {
+    color: #aaa5be;
+    line-height: 1.8;
+}
+
+.banner {
+    background: linear-gradient(120deg,#40218b,#17102e);
+    text-align: center;
+    border-radius: 20px;
+    padding: 65px 25px;
+}
+
+.banner h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    color: #ddd2ff;
+    margin-bottom: 30px;
+}
+
+.banner .btn {
+    background: white;
+    color: #40218b;
+}
+
+footer {
+    padding: 35px;
+    text-align: center;
+    background: #05040d;
+    color: #88829e;
+    line-height: 2;
+}
+
+footer span {
+    color: #a78bfa;
+}
+
+@media(max-width:768px) {
+    header {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 12px;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 75px 6%;
+    }
+
+    .hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SUMA.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Service</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-content">
+
+        <div class="tag">WELCOME TO SUMA TECHNOLOGY</div>
+
+        <h1>
+            EXPLORE THE
+            <span>WORLD OF</span>
+            TECHNOLOGY.
+        </h1>
+
+        <p>
+            Selamat datang di SUMA, dunia Teknik Komputer
+            dan Jaringan. Pelajari teknologi, bangun koneksi,
+            dan jadilah bagian dari masa depan digital.
+        </p>
+
+        <a href="#about" class="btn">DISCOVER MORE →</a>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <div class="heading">
+        <h2>ABOUT SUMA</h2>
+        <p>Technology is our future</p>
+    </div>
+
+    <div class="about-content">
+        SUMA merupakan platform yang mengangkat dunia
+        Teknik Komputer dan Jaringan (TKJ). Kami
+        memperkenalkan berbagai teknologi komputer,
+        perangkat jaringan, sistem operasi, dan perkembangan
+        teknologi digital untuk menambah wawasan dan
+        pengetahuan.
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+<section id="service">
+
+    <div class="heading">
+        <h2>WHAT WE LEARN</h2>
+        <p>Explore our technology fields</p>
+    </div>
+
+    <div class="services">
+
+        <div class="service">
+            <div class="icon">🖥️</div>
+            <h3>Computer Hardware</h3>
+            <p>
+                Belajar mengenal komponen komputer,
+                perakitan PC, perawatan hardware,
+                dan troubleshooting.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="icon">🌐</div>
+            <h3>Networking</h3>
+            <p>
+                Memahami jaringan LAN, WAN,
+                konfigurasi router, switch,
+                dan administrasi jaringan.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="icon">💾</div>
+            <h3>Operating System</h3>
+            <p>
+                Mempelajari instalasi sistem operasi,
+                manajemen software, dan
+                konfigurasi sistem komputer.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+
+    <div class="banner">
+
+        <h2>READY TO EXPLORE?</h2>
+
+        <p>
+            Start your journey and discover
+            the future of technology with SUMA.
+        </p>
+
+        <a href="mailto:emailkamu@example.com"
+           class="btn">
+           CONTACT US →
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    <h2><span>SUMA.</span></h2>
+    <p>Technology • Networking • Innovation</p>
+    <p>© 2026 SUMA. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
