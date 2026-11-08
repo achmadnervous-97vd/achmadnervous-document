@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAEYZHA | Teknik Komputer dan Jaringan</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #071426;
+    color: white;
+}
+
+header {
+    width: 100%;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0b1b30;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #28a5ff;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #28a5ff;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 8% 60px;
+    background:
+    linear-gradient(90deg, #071426 30%, #071426cc),
+    url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600")
+    center/cover;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h3 {
+    color: #28a5ff;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #28a5ff;
+}
+
+.hero p {
+    color: #b9c9dc;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #1689ef;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #0065c9;
+    transform: translateY(-4px);
+}
+
+section {
+    padding: 90px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    color: #28a5ff;
+    margin-bottom: 12px;
+}
+
+.section-title p {
+    color: #aebed0;
+}
+
+.about {
+    background: #0b1b30;
+    text-align: center;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 2;
+    color: #c5d4e5;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #102943;
+    padding: 35px 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #193e60;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #28a5ff;
+}
+
+.card .icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #28a5ff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #b9c9dc;
+    line-height: 1.7;
+}
+
+.contact {
+    background: #0b1b30;
+    text-align: center;
+}
+
+.contact p {
+    color: #b9c9dc;
+    margin-bottom: 25px;
+}
+
+footer {
+    background: #04101e;
+    text-align: center;
+    padding: 25px;
+    color: #8499af;
+}
+
+@media(max-width: 768px) {
+    header {
+        padding: 18px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 75px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">FAEYZHA.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#materi">Materi</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h3>WELCOME TO FAEYZHA</h3>
+
+        <h1>
+            BUILD YOUR <span>DIGITAL</span>
+            FUTURE
+        </h1>
+
+        <p>
+            Selamat datang di dunia Teknik Komputer dan Jaringan.
+            Tempat belajar teknologi, jaringan komputer,
+            hardware, dan perkembangan dunia digital.
+        </p>
+
+        <a href="#about" class="btn">Explore More →</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div class="section-title">
+        <h2>ABOUT FAEYZHA</h2>
+        <p>Mengenal dunia Teknik Komputer dan Jaringan</p>
+    </div>
+
+    <p>
+        FAEYZHA merupakan halaman teknologi yang memperkenalkan
+        dunia TKJ (Teknik Komputer dan Jaringan). TKJ adalah bidang
+        keahlian yang mempelajari komputer, perangkat keras,
+        instalasi sistem operasi, jaringan komputer, serta
+        teknologi informasi dan komunikasi.
+        Mari berkembang dan berinovasi bersama teknologi!
+    </p>
+</section>
+
+<!-- MATERI -->
+<section id="materi">
+    <div class="section-title">
+        <h2>OUR EXPERTISE</h2>
+        <p>Beberapa bidang yang dipelajari dalam TKJ</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Computer Hardware</h3>
+            <p>
+                Mengenal komponen komputer, merakit PC,
+                dan melakukan perawatan perangkat keras.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌐</div>
+            <h3>Computer Networking</h3>
+            <p>
+                Mempelajari konfigurasi jaringan,
+                router, switch, LAN, dan internet.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚙️</div>
+            <h3>Software & System</h3>
+            <p>
+                Mengenal sistem operasi, instalasi software,
+                konfigurasi server, dan troubleshooting.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="section-title">
+        <h2>LET'S CONNECT</h2>
+        <p>Terus belajar, terus berkembang bersama teknologi.</p>
+    </div>
+
+    <p>FAEYZHA - Teknik Komputer dan Jaringan</p>
+
+    <a href="mailto:emailkamu@example.com" class="btn">
+        Contact Me
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 FAEYZHA. All Rights Reserved.</p>
+    <p>Designed with passion for technology.</p>
+</footer>
+
+</body>
+</html>
